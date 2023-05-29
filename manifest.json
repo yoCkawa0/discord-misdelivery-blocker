@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "version": "0.1",
+  "name": "Discord misdelivery blocker",
+  "description": "This tool prevents misdirects at ENTER.",
+  "content_scripts": [
+    {
+      "matches": ["https://discord.com/*"],
+      "js": ["src/content.js"]
+    }
+  ],
+  "permissions": ["activeTab"],
+  "action": {"default_icon": "src/browser_action_icon.png" }
+}
